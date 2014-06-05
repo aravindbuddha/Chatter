@@ -1,12 +1,21 @@
-define(['backbone', 'underscore', 'text'], function (BackBone, _, text) {
-  var tpl = require('text!../../tmpl/post/list.html');
+define([
+  'backbone',
+  'underscore',
+  'text',
+  'text!../../tmpl/post/list.html'
+], function (BackBone, _, text, tpl) {
+  //var tpl = require('text!../../tmpl/post/list.html');
   var PostList = BackBone.View.extend({
     template: _.template(tpl),
     initialize: function () {
-      console.log(this.template);
+
     },
     show: function () {
-      console.log(this.template);
+      console.log(tpl);
+    },
+    render: function () {
+      var html = "<h2>My html</h2>";
+      $(this.el).html(html);
     }
   });
 

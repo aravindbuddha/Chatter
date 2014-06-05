@@ -7,6 +7,14 @@ require.config({
   }
 });
 
-require(['view/post/list'], function (AppView) {
-  new AppView();
-});
+require([
+    'view/post/list',
+    'route'
+  ],
+  function (AppView, appRouter) {
+    new AppView();
+    new appRouter();
+
+    //init history
+    Backbone.history.start();
+  });
