@@ -1,0 +1,15 @@
+{
+  "name": "Blogo",
+  "version": "0.0.0",
+  "authors": [
+    "aravindbuddha <buddhaaravind@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "backbone-amd": "~1.1.0",
+    "requirejs": "~2.1.11",
+    "underscore-amd": "~1.5.2"
+  },
+  "private": true
+}
