@@ -1,4 +1,6 @@
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^/]*)(.*)$ index.php?class=$1&method=$2&args=$3 [L,QSA]
+
+
+RewriteRule ^([a-zA-Z]*)/?([a-zA-Z]*)?/?(.*)?/?$ index.php?controller=$1&action=$2&args=$3 [NC,L]

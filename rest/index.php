@@ -1,7 +1,6 @@
 <?php
 	//include 'lib/bootstrap.php';
+include 'lib/config.php';
+include 'lib/init.php';
 
-echo "class->".$_GET['class'];
-echo "method->".$_GET['method'];
-echo "args->".$_GET['args'];
 ?>
